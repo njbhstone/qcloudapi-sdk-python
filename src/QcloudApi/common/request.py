@@ -3,6 +3,8 @@
 
 import urllib
 import requests
+import requests.packages.urllib3
+requests.packages.urllib3.disable_warnings()
 from sign import Sign
 
 class Request:
